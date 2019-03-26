@@ -1,7 +1,7 @@
 # spring-cloud-microservices-examples
 Microservices examples using spring cloud netflix integration with spring boot apps
 
-### Use Case:
+### Case Study:
 
 Building a microservice application to track investment portfolio of an user like ET-Portfolio or Money Control.  This should track the investments of a user and could show return of investment over a period of time.
 
