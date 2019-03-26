@@ -2,15 +2,12 @@
 
 ## Microservices examples using spring cloud netflix integration with spring boot apps
 
-#
-#
+
 ### Case Study:
 
 Building a microservice application to track investment portfolio of an user like ET-Portfolio or Money Control.  This should track the investments of a user and could show return of investment over a period of time.
 
 Scope this case study is to only track investments of type stock and mutual funds. 
-#
-#
 
 #### Solution:
 
@@ -21,8 +18,6 @@ Scope this case study is to only track investments of type stock and mutual fund
 | [Portfolio Tracker Aggregator Service](https://github.com/anilpatro83/spring-cloud-microservices-examples/tree/master/portfolio-tracker-app-service) | Interacts with both db service and pricing service to process the user portfolio data and fetch investment returns|
 | [Portfolio Tracker Registry Service](https://github.com/anilpatro83/spring-cloud-microservices-examples/tree/master/portfolio-tracker-registry-service) | Acts as a service registry and api gateway|
 
-#
-#
 ![micro-service-update](https://user-images.githubusercontent.com/10323216/54940620-14b71980-4f51-11e9-8d3a-3645281803b5.jpg)
 
 #### API :
@@ -31,7 +26,7 @@ Scope this case study is to only track investments of type stock and mutual fund
 *api to save user quotes for a stock.*
 
 ```
-url: http://localhost:9291/api/register-portfolio-data/quotes
+url: /api/register-portfolio-data/quotes
 method:POST
 headers:
 content-type:application/json
@@ -50,7 +45,7 @@ body:
 *api to fetch portfolio data with returns.*
 
 ```
-url: http://localhost:9291/api/investment/portfolio/stock/102
+url: /api/investment/portfolio/stock/102
 method:GET
 headers:
 content-type:application/json
